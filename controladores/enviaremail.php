@@ -1,7 +1,6 @@
 <?php 
 	$emailwc = "wgalimberti@winecity.com.ar";
 	$nombre = $_POST["nombre"];
-	$apellido = $_POST["apellido"];
 	$email = $_POST["email"];
 	$telefono = $_POST["telefono"];
 	$mensaje = $_POST["mensaje"];
@@ -11,7 +10,7 @@
 	
 
 
-	$cuerpo = "Nombre: " . $nombre . ", Apellido: " . $apellido . " - Email: " . $email . ", Teléfono: " . $telefono . " - Mensaje: " . $mensaje;
+	$cuerpo = "Nombre: " . $nombre . ", Email: " . $email . ", Teléfono: " . $telefono . " - Mensaje: " . $mensaje;
 
 	mail($emailwc, $titulo , $subtitulo . $cuerpo);
 
