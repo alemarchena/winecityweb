@@ -15,6 +15,4 @@
 
 	mail($emailwc, $titulo , $subtitulo . $cuerpo);
 	mail($emailam, $titulo , $subtitulo . $cuerpo);
-
-	echo "Enviado correctamente";
 ?>

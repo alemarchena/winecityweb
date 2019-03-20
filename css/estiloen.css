@@ -1,0 +1,220 @@
+@font-face
+{
+    font-family:<HelveticaWorld-Regular>;
+    src: url(<../fonts/HelveticaWorld-Regular.ttf>);
+}
+@font-face
+{
+    font-family:<HelveticaWorld-Bold>;
+    src: url(<../fonts/HelveticaWorld-Bold.ttf>);
+}
+
+body{
+	/*background-color: #c3cac0;*/
+	background-color: white;
+	/*font-family: HelveticaWorld-Regular;*/
+	font-family: 'Raleway', sans-serif;
+	size: 16px;
+}
+.nombre{
+	font-family: 'Slabo 27px', serif;
+	font-size: 2em;
+}
+p{
+	color:#424242;
+	size: 16px;
+
+}
+li{
+	color:#424242;
+	size: 16px;
+
+}
+#argentina{
+	background-color: #E0F8F7;
+}
+#chile{
+	background-color: #F8ECE0;
+}
+.card-text{
+	color:#424242;
+	size: 16px;
+}
+.card{
+	color:#424242;
+	size: 16px;
+}
+.carta{
+	color:#686c4b;
+}
+.describir{
+	background-color:#086A87; 
+}
+.describir:hover{
+	background-color:#0B4C5F; 
+}
+a.nav-link {
+	color: #c6c6c6;
+	font-size: 1em;
+	text-align: center;
+	background-color: #302839!important; /*color vino tinto */
+}
+
+a.nav-link:hover {
+	color: #d12227!important;
+	text-align: center;
+
+}
+.titulo{
+	/*font-family: HelveticaWorld-Regular;*/
+	font-family: 'Raleway', sans-serif;
+	background-color: #686c4b; /* color oliva*/
+	height: 30px;
+	line-height: 20px; 
+	padding-top: 0.5em;
+	
+}
+.titulo>p{
+	color: #c6c6c6;
+	font-size: 0.8em;
+}
+.subtitulo{
+	/*font-family: HelveticaWorld-Bold;*/
+	font-family: 'Raleway', sans-serif;
+
+	background-color: #302839; 
+	color: #c6c6c6;
+	height: 50px;
+	padding-top: 0.5em;
+	font-size: 1.3em;
+	border-top: 1px solid #886A08;
+}
+
+.tips{
+	background-color: #686c4b;
+	color: white;
+   font-size: 14px;
+   
+}
+
+.bloques{
+	color: white;
+	font-size: 1.2em;
+}
+#portada{
+	border-bottom: 1px solid #BDBDBD;
+}
+#fondotriv{
+	background-image: url('../img/copa.jpg');
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.botoncustom{
+	background-color: #686c4b;
+	color: white;
+}
+.seccion{
+	padding: 2em;
+	border-bottom: 1px solid #686c4b;
+
+}
+.menu{ /*hace referencia a la clase menu*/
+
+	z-index:1000;
+	top:0;
+	left:0;	
+	width: 100%;
+	height: 105px;
+	/*font-family: 'HelveticaWorld-Regular', serif;*/
+	font-family: 'Raleway', sans-serif;
+
+	color: #c6c6c6;
+	background-color: #302839!important;
+	/*background-image: url('../img/textura-vino.jpg');
+	background-repeat: repeat;*/
+	border-bottom: 3px solid #a4171b;
+}
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	left:0;	
+	width: 100%;
+	height: 105px;
+	/*font-family: 'HelveticaWorld-Regular', serif;*/
+	font-family: 'Raleway', sans-serif;
+
+	background-color: #302839!important;
+	border-bottom: 3px solid #a4171b;
+	
+}
+.redes:hover{
+	-webkit-box-shadow: 0px 0px 18px 4px rgba(117,113,117,1);
+	-moz-box-shadow: 0px 0px 18px 4px rgba(117,113,117,1);
+	box-shadow: 0px 0px 18px 4px rgba(117,113,117,1);
+}
+
+.redes{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+
+#quienessomos{
+	background-color: #c3cac0!important;
+} 
+
+#seccion3{
+	background-color: #c3cac0!important;
+}
+
+#seccion4{
+	background-color: #c3cac0!important;
+} 
+
+#contacto{
+	background-color: #c3cac0!important;
+}
+
+
+/*
+@media screen and (max-device-width: 3500px) and (min-device-width: 1300px)
+{ 
+	
+}
+
+@media screen and (max-device-width: 1301px) and (min-device-width: 1140px)
+{ 
+	
+}
+
+@media screen and (max-device-width: 1139px) and (min-device-width: 960px)
+{ 
+	
+}
+
+@media screen and (max-device-width: 959px) and (min-device-width: 768px)
+{ 
+	
+}
+@media screen and (max-device-width: 767px) and (min-device-width: 540px)
+{ 
+	
+}
+
+@media screen and (max-device-width: 539px) and (min-device-width: 490px)
+{ 
+	
+}
+
+@media screen and (max-device-width: 489px) and (min-device-width: 400px)
+{ 
+	
+}
+
+@media screen and (max-device-width: 399px) and (min-device-width: 200px)
+{ 
+	
+}
+*/

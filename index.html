@@ -6,6 +6,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" type="img/png" href="img/logowinecity.png"/>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-20425306-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-20425306-2');
+
+  	//Código de seguimiento de la etiqueta global de sitio (gtag.js):
+	gtag('set', {'content_group1': 'mujeres'}); 
+	//Código de seguimiento de Universal Analytics (analytics.js):
+	ga('set', 'contentGroup1', 'mujeres'); 
+	//Código de seguimiento de Analytics clásico (ga.js):
+	_gaq.push(['_setPageGroup', 1, 'mujeres']); 
+</script>
+
+
 <!-- Bootstrap CSS -->
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -17,6 +35,7 @@
 -->
 <link rel="stylesheet" href="css/estilo.css">
 <link rel="stylesheet" href="css/efectos.css">
+
 
  <script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -54,8 +73,10 @@
 				<li><a id="bloque4" class="nav-link" href="#seccionproyectosweb">Quienes somos</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li><a class="nav-link" href="http://www.winecity.com.ar/en/">English</a></li>
+				<li><a id="btnsuscribe" href="#" class="redes nav-link rounded"><img  src="img/suscribete-boton.png"></a></li>
 
-				<li><a id="facebook" class="redes nav-link"href="http://www.facebook.com/WineCityExperience" target="_blank"><img class="img-fluid" src="img/facebook.png"></a></li>
+				<li><a id="facebook" class="redes nav-link" href="http://www.facebook.com/WineCityExperience" target="_blank"><img class="img-fluid" src="img/facebook.png"></a></li>
 				<li><a id="instagram" class="redes  nav-link" href="https://www.instagram.com/winecityexperience" target="_blank"><img class="img-fluid" src="img/instagram.png"></a></li>
 				<li><a id="you tube" class="redes  nav-link" href="https://www.youtube.com/channel/UCoDwQQxeKjMwyAbuP45uoIw/videos/" target="_blank"><img class="img-fluid" src="img/youtube.png"></a></li>
 			</ul>
@@ -69,6 +90,8 @@
 		<div>
 			<img id="portada" class="img-fluid w-100" src="img/portadas/portada4.jpg">
 		</div>
+		
+		<div id="suscripcion" class="fixed-top mt-2 mr-2" align="right"></div>
 
 		<div class="text-center titulo">
 			<p>Haremos su viaje seguro y confortable</p>
@@ -313,9 +336,11 @@
 	
 			</span>
 		</footer>
+
+		
 	</div>
 	
-	
+		
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
@@ -323,14 +348,31 @@
 	<script src="popper/popper.min.js"></script>
 	<script src="boostrap/js/bootstrap.min.js"></script>
 -->
+
 	<script src="js/scrollmenu.js"></script> <!-- codigo que permite el scroll de menu-->
+	<script src="js/subscriptionPopup.js"></script>
 </body>
 
 <script type="text/javascript">
 	
 
+
 $(document).ready(function()
 {
+	//verifica si la cookie esta creada
+	$("#suscripcion").load("suscribe.php");
+
+	$("#btnsuscribe").click(function(){
+		$("#mpopupBox").show();
+	});
+	
+	
+	
+	$("#enviasuscripcion").click(function(){
+		alert("Cookie creada");
+		setCookie("popDisplayed", 1, { expires: 155 });
+
+	});
 
 	//$("#subcontenedor").load("secciones.php");
     $("#seccion3").load("contacto.php");
@@ -347,13 +389,6 @@ $(document).ready(function()
             }, 800); 
 	});
 
-/*
-	$("#inicio").click(function(){
-		window.location.href ='http://www.winecity.com.ar/winecitynew/index.html';
-        
-    });
-
-*/	
 
 	$("#itours").click(function(e){
 		window.location.href ='http://www.winecity.com.ar/tours.php';
