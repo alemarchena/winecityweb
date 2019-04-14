@@ -31,6 +31,15 @@
 
 <title>Wine City</title>
 <link rel="icon" type="img/png" href="img/logowinecity.png"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-20425306-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-20425306-5');
+</script>
 </head>
 
 <body id="pagina">
