@@ -356,13 +356,9 @@ $(document).ready(function()
 {
 	//verifica si la cookie esta creada
 	$("#suscripcion").load("suscribe.php");
-
 	$("#btnsuscribe").click(function(){
 		$("#mpopupBox").show();
 	});
-	
-	
-	
 	$("#enviasuscripcion").click(function(){
 		alert("Cookie creada");
 		setCookie("popDisplayed", 1, { expires: 155 });
