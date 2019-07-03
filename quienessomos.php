@@ -13,6 +13,49 @@
 </head>
 <div id="quienessomos" class="container">
 	<div class="row">
+		<div class="card-deck py-4">
+
+			<div class="card rounded">
+				<img src="img/wch1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title carta">Confort y Seguridad</h5>
+
+					<p class="card-text"><small class="text-muted">Transporte de alta gama, con todas las habilitaciones legales.</small></p>
+
+				</div>
+			</div>
+		
+			<div class="card rounded">
+				<img src="img/wch2.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title carta"></h5>
+
+					<p class="card-text"><small class="text-muted">Sabemos sobre el gusto de nuestros clientes, por ello adaptamos nuestras unidades para su mejor experiencia</small></p>
+				</div>
+			</div>
+
+			<div class="card rounded">
+				<img src="img/wcp1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title carta">Placer y buenos momentos</h5>
+
+					<p class="card-text"><small class="text-muted">Atención personalizada. Calificamos a nuestros proveedores y bodegas para asegurarnos su bienestar.</small></p>
+				</div>
+			</div>
+
+			<div class="card rounded">
+				<img src="img/wcp3.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title carta"></h5>
+
+					<p class="card-text"><small class="text-muted">Brindamos confianza a través de nuestro servicio y recomendaciones.</small></p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<hr>
+	<div class="row">
 		<div class="col-sm-3">
 				<p>Somos una agencia de turismo especializada en transporte de pasajeros, nuestro servicio cuenta con tours y paquetes de excelencia, brindamos la mejor atención y asesoramos a nuestros clientes para que disfruten su mejor estadía.</p>
 		</div>

@@ -1,5 +1,48 @@
 
 <div id="quienessomos" class="container">
+<div class="row">
+		<div class="card-deck py-4">
+
+			<div class="card rounded">
+				<img src="../img/wch1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title carta">Comfort and safety</h5>
+
+					<p class="card-text"><small class="text-muted">High-end transport, with all legal ratings.</small></p>
+
+				</div>
+			</div>
+		
+			<div class="card rounded">
+				<img src="../img/wch2.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title carta"></h5>
+
+					<p class="card-text"><small class="text-muted">We know about the taste of our customers, so we adapt our units for your best experience.</small></p>
+				</div>
+			</div>
+
+			<div class="card rounded">
+				<img src="../img/wcp1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title carta">Pleasure and good times</h5>
+
+					<p class="card-text"><small class="text-muted">Personalized attention We qualify our suppliers and wineries to ensure their well-being.</small></p>
+				</div>
+			</div>
+
+			<div class="card rounded">
+				<img src="../img/wcp3.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title carta">Comfort and safety</h5>
+
+					<p class="card-text"><small class="text-muted">We provide trust through our service and recommendations.</small></p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<hr>
 	<div class="row">
 		<div class="col-sm-3">
 				<p>We are a tourism agency specializing in passenger transport, our service has tours and packages of excellence, we provide the best care and advise our customers to enjoy their best stay.</p>
