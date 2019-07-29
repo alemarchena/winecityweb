@@ -19,7 +19,7 @@ function Actualizar() {
 	var hsEntreFechas = ( Math.round( msEntreFechas/(1000*60*60) ) );
 	var minEntreFechas = ( Math.round( msEntreFechas/(1000*60) ) );
 	var segEntreFechas = ( Math.round( msEntreFechas/(1000) ) );
-	var random = Math.floor(Math.random() * 100) + 1;
+	var random = Math.floor(Math.random() * 30) + 1;
 
 	//muestra los resultados entre fechas
     document.getElementById("fechafutura").innerHTML = fechafutura;

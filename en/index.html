@@ -18,9 +18,9 @@
   	//Código de seguimiento de la etiqueta global de sitio (gtag.js):
 	gtag('set', {'content_group1': 'mujeres'}); 
 	//Código de seguimiento de Universal Analytics (analytics.js):
-	ga('set', 'contentGroup1', 'mujeres'); 
+	//ga('set', 'contentGroup1', 'mujeres'); 
 	//Código de seguimiento de Analytics clásico (ga.js):
-	_gaq.push(['_setPageGroup', 1, 'mujeres']); 
+	//_gaq.push(['_setPageGroup', 1, 'mujeres']); 
 </script>
 
 
@@ -73,6 +73,7 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a class="nav-link" href="http://www.winecity.com.ar">Español</a></li>
+				<li><a id="app" class="redes nav-link" href="https://play.google.com/store/apps/details?id=com.winecity.winecity&hl=es_419" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Download App"><img class="img-fluid" src="../img/isotipo.png"></a></li>
 				<li><a id="facebook" class="redes nav-link"href="http://www.facebook.com/WineCityExperience" target="_blank"><img class="img-fluid" src="../img/facebook.png"></a></li>
 				<li><a id="instagram" class="redes  nav-link" href="https://www.instagram.com/winecityexperience" target="_blank"><img class="img-fluid" src="../img/instagram.png"></a></li>
 				<li><a id="you tube" class="redes  nav-link" href="https://www.youtube.com/channel/UCoDwQQxeKjMwyAbuP45uoIw/videos/" target="_blank"><img class="img-fluid" src="../img/youtube.png"></a></li>
@@ -351,7 +352,11 @@
 -->
 	<script src="../js/scrollmenu.js"></script> <!-- codigo que permite el scroll de menu-->
 </body>
-
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 <script type="text/javascript">
 	
 
@@ -373,14 +378,6 @@ $(document).ready(function()
             }, 800); 
 	});
 
-/*
-	$("#inicio").click(function(){
-		window.location.href ='http://www.winecity.com.ar/winecitynew/index.html';
-        
-    });
-
-*/	
-
 	$("#itours").click(function(e){
 		window.location.href ='http://www.winecity.com.ar/en/tours.php';
 	});
@@ -390,8 +387,5 @@ $(document).ready(function()
     $("#ipaquetes").click(function(e){window.location.href ='http://www.winecity.com.ar/en/paquetes.php';});
     $("#bpaquetes").click(function(e){window.location.href ='http://www.winecity.com.ar/en/paquetes.php';});
 
-	$(function () {
-		  $('[data-toggle="tooltip"]').tooltip()
-		})
-	});
+});
 </script>
